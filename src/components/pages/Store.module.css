@@ -1,0 +1,22 @@
+.myCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  max-width: 55rem
+}
+
+.myCards > div {
+  width: 16rem;
+  margin-bottom: 2rem;
+}
+
+.myCards-image {
+  overflow: hidden;
+}
+
+.myCards-image img {
+  transition: scale 500ms ease-in;
+}
+.myCards-image img:hover {
+  scale: 1.5;
+}
