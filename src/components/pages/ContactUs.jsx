@@ -19,7 +19,7 @@ function ContactUs() {
 
     try {
       const response = await fetch(
-        "https://e-commerce-app-ce50f-default-rtdb.firebaseio.com/userMessages.json",
+        "https://bold-impulse-382818-default-rtdb.firebaseio.com/userMessages.json",
         {
           method: "POST",
           body: JSON.stringify(userMessage),

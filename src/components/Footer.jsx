@@ -1,39 +1,32 @@
-import { Button } from "react-bootstrap";
+import React from "react";
 
-function Footer() {
+import classes from "./Footer.module.css";
+
+const Footer = () => {
   return (
-    <footer className="p-3 bg-info text-white d-flex justify-content-around">
-      <span
-        style={{ fontFamily: "serif" }}
-        className="display-4 font-weight-bolder"
-      >
-        My Generics
-      </span>
-      <div className="d-flex">
-        <Button variant="info mx-3">
+    <footer className={classes.footer}>
+      <span>The Generics</span>
+      <div className={classes.links}>
+        <a rel="noreferrer" href="https://www.youtube.com" target="_blank">
           <img
-            src="https://toppng.com/uploads/preview/youtube-play-button-pn-11545514822bk31y8sdg5.png"
-            alt="Youtube"
-            height="30px"
+            src="https://connecting-to-database-c9c11.web.app/footer/youtube.png"
+            alt="YouTube"
           />
-        </Button>
-        <Button variant="info mx-3">
+        </a>
+        <a rel="noreferrer" href="https://www.spotify.com" target="_blank">
           <img
-            src="https://www.pngplay.com/wp-content/uploads/13/Ig-Icon-PNG-Clipart-Background.png"
-            alt="Instagram"
-            height="30px"
+            src="https://connecting-to-database-c9c11.web.app/footer/spotify.png"
+            alt="Spotify"
           />
-        </Button>
-        <Button variant="info mx-3">
+        </a>
+        <a rel="noreferrer" href="https://www.facebook.com" target="_blank">
           <img
-            src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7915717/facebook-icon-md.png"
+            src="https://connecting-to-database-c9c11.web.app/footer/facebook.png"
             alt="Facebook"
-            height="30px"
           />
-        </Button>
+        </a>
       </div>
     </footer>
   );
-}
-
+};
 export default Footer;

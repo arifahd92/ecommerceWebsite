@@ -70,8 +70,9 @@ function passwordChangeHandler(url, fetchBody, alertModalHandler) {
 }
 
 function AuthModal(props) {
-  const { showAuthModal, authModalHandler, alertModalHandler } =
-    useContext(ModalContext);
+  const { showAuthModal, authModalHandler, alertModalHandler } = useContext(
+    ModalContext
+  );
   const { token, loginHandler } = useContext(AuthContext);
 
   const emailInputRef = useRef();

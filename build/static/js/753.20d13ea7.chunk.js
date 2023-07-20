@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunke_commerce_app=self.webpackChunke_commerce_app||[]).push([[753],{5753:function(e,n,s){s.r(n);var t=s(184);n.default=function(){return(0,t.jsx)(t.Fragment,{children:(0,t.jsxs)("div",{className:"mt-5 w-100 font-weight-bolder d-flex align-items-center justify-content-center",children:[(0,t.jsx)("h1",{className:"p-5 mt-5 display-1 font-weight-bolder",children:"404 Error"}),(0,t.jsx)("h2",{className:"display-4",children:"Not Found!!!"})]})})}}}]);
+//# sourceMappingURL=753.20d13ea7.chunk.js.map
