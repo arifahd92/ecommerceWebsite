@@ -10,8 +10,7 @@ function TableDataList(props) {
         <Button
           variant="info"
           className="w-100"
-          style={{ fontFamily: "monospace" }}
-        >
+          style={{ fontFamily: "monospace" }}>
           Buy Ticket
         </Button>
       </td>

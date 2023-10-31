@@ -1,4 +1,4 @@
-import { Table } from "react-bootstrap";
+import { Container, Table } from "react-bootstrap";
 import TableDataList from "./TableDataList";
 
 const TABLEDATA = [
@@ -36,32 +36,28 @@ const TABLEDATA = [
 
 function TableData() {
   return (
-    <>
-      <div className=" table-responsive d-flex justify-content-center text-center  mb-5">
-        <Table className=" w-75">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Location</th>
-              <th>Description</th>
-              <th>Buy Now</th>
-            </tr>
-          </thead>
-          <tbody>
-            {TABLEDATA.map((item) => {
-              return (
-                <TableDataList
-                  key={Math.random().toString()}
-                  date={item.date}
-                  location={item.location}
-                  description={item.description}
-                />
-              );
-            })}
-          </tbody>
-        </Table>
-      </div>
-    </>
+    <Container className="table-responsive d-flex justify-content-center text-center mb-5">
+      <Table className="">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Description</th>
+            <th>Buy Now</th>
+          </tr>
+        </thead>
+        <tbody>
+          {TABLEDATA.map((item) => (
+            <TableDataList
+              key={Math.random().toString()}
+              date={item.date}
+              location={item.location}
+              description={item.description}
+            />
+          ))}
+        </tbody>
+      </Table>
+    </Container>
   );
 }
 

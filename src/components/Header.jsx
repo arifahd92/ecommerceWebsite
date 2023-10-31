@@ -17,12 +17,11 @@ function Header() {
       bg="dark"
       expand="lg"
       variant="dark"
-      className="position-fixed fixed-top"
-    >
+      className="position-fixed fixed-top">
       <Navbar.Brand href="#home" className="mr-5">
-        <h1 style={{ fontFamily: "serif" }} className="font-weight-bolder">
+        <h2 style={{ fontFamily: "serif" }} className="font-weight-bolder">
           My Generics
-        </h1>
+        </h2>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -52,8 +51,7 @@ function Header() {
               variant="info"
               className="d-flex align-items-center mr-3"
               size="lg"
-              onClick={cartModalHandler}
-            >
+              onClick={cartModalHandler}>
               Cart
               <Badge pill variant="light" className="ml-3 p-2">
                 {totalItems}
@@ -67,8 +65,7 @@ function Header() {
               size="lg"
               onClick={() => {
                 authModalHandler("Signin", false);
-              }}
-            >
+              }}>
               Signin
             </Button>
           )}
@@ -79,8 +76,7 @@ function Header() {
               size="lg"
               onClick={() => {
                 authModalHandler("Signup", false);
-              }}
-            >
+              }}>
               Signup
             </Button>
           )}
@@ -91,8 +87,7 @@ function Header() {
               size="lg"
               onClick={() => {
                 authModalHandler("Change Password", true);
-              }}
-            >
+              }}>
               Change Password
             </Button>
           )}
@@ -101,8 +96,7 @@ function Header() {
               variant="danger"
               className="d-flex align-items-center mr-3"
               size="lg"
-              onClick={logoutHandler}
-            >
+              onClick={logoutHandler}>
               Logout
             </Button>
           )}
