@@ -6,7 +6,7 @@ function Home() {
       <div className="p-3 container-fluid mt-5 bg-secondary text-white d-flex flex-column align-items-center py-5">
         <h3 className="p-3 mt-5 border border-info">Get Our Latest Album</h3>
         <div className="row">
-          <div className="col border border-danger text-center d-flex  justify-content-center ">
+          <div className="col  text-center d-flex  justify-content-center ">
             <img
               className="d-block text-center"
               style={{ height: "300px", width: "350px" }}
