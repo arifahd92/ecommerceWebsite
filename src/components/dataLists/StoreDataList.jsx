@@ -12,14 +12,12 @@ function StoreDataList(props) {
     <div>
       <h3
         className="text-center font-weight-bolder"
-        style={{ fontFamily: "serif" }}
-      >
+        style={{ fontFamily: "serif" }}>
         {props.title}
       </h3>
       <div
         style={{ width: "16rem" }}
-        className={`m-auto ${styles["myCards-image"]}`}
-      >
+        className={`m-auto ${styles["myCards-image"]}`}>
         <Link to={`/products/${props.id}`}>
           <img
             variant="top"
@@ -29,8 +27,13 @@ function StoreDataList(props) {
           />
         </Link>
       </div>
-      <div className="d-flex align-items-center justify-content-between my-3">
-        <p style={{ fontFamily: "serif", paddingTop: "12px" }}>
+      <div className="d-flex align-items-center justify-content-center my-4">
+        <p
+          style={{
+            fontFamily: "serif",
+            paddingTop: "12px",
+            marginRight: "100px",
+          }}>
           ${props.price.toFixed(2)}
         </p>
         <Button
@@ -38,8 +41,7 @@ function StoreDataList(props) {
           className="btn-sm"
           onClick={() => {
             addItem(props.id, props.url, props.title, props.price);
-          }}
-        >
+          }}>
           ADD TO CART
         </Button>
       </div>

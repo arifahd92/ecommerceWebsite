@@ -50,40 +50,53 @@ function ContactUs() {
   }
 
   return (
-    <section className="mt-5 d-flex justify-content-center">
-      <Form onSubmit={submitHandler} className="w-50 p-5 m-5">
-        <Form.Group controlId="formBasicPassword" className="mt-5">
-          <Form.Label>Name :</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Your Name"
-            ref={nameRef}
-            required
-          />
-        </Form.Group>
+    <section className="mt-5">
+      <div className="container container-md-fluid">
+        <div className="row">
+          <div className="col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+            <Form onSubmit={submitHandler} className=" m-5">
+              <Form.Group controlId="formBasicPassword" className="mt-5">
+                <Form.Label>Name :</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Your Name"
+                  ref={nameRef}
+                  required
+                />
+              </Form.Group>
 
-        <Form.Group controlId="formBasicEmail" className="mt-3">
-          <Form.Label>Email :</Form.Label>
-          <Form.Control
-            type="email"
-            placeholder="Enter email"
-            ref={emailRef}
-            required
-          />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
+              <Form.Group controlId="formBasicEmail" className="mt-3">
+                <Form.Label>Email :</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="Enter email"
+                  ref={emailRef}
+                  required
+                />
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
 
-        <Form.Group controlId="exampleForm.ControlTextarea1" className="mt-3">
-          <Form.Label>Your Message :</Form.Label>
-          <Form.Control as="textarea" rows={3} ref={messageRef} required />
-        </Form.Group>
+              <Form.Group
+                controlId="exampleForm.ControlTextarea1"
+                className="mt-3">
+                <Form.Label>Your Message :</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={3}
+                  ref={messageRef}
+                  required
+                />
+              </Form.Group>
 
-        <Button variant="primary" type="submit" className="mt-4">
-          Send Message
-        </Button>
-      </Form>
+              <Button variant="primary" type="submit" className="mt-4">
+                Send Message
+              </Button>
+            </Form>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
