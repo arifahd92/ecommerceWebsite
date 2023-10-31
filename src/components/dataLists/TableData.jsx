@@ -37,8 +37,8 @@ const TABLEDATA = [
 function TableData() {
   return (
     <>
-      <div className="d-flex justify-content-center mb-5">
-        <Table className="w-50">
+      <div className=" table-responsive d-flex justify-content-center text-center  mb-5">
+        <Table className=" w-75">
           <thead>
             <tr>
               <th>Date</th>

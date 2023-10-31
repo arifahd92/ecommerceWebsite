@@ -9,13 +9,13 @@ function Home() {
           src="https://www.pngmart.com/files/3/Play-Button-PNG-Image.png"
           alt="Play"
           height="70px"
+          width={"700px"}
         />
       </div>
 
       <h1
         className="text-center font-weight-bolder my-5"
-        style={{ fontFamily: "serif" }}
-      >
+        style={{ fontFamily: "serif" }}>
         Tours
       </h1>
 
