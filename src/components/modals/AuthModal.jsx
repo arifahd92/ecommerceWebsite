@@ -1,5 +1,5 @@
 import { useContext, useRef } from "react";
-import { Button, Form, Modal } from "react-bootstrap";
+import { Button, Form, Modal, closeButton } from "react-bootstrap";
 import AuthContext from "../store/auth-context";
 import ModalContext from "../store/modal-context";
 
@@ -70,9 +70,8 @@ function passwordChangeHandler(url, fetchBody, alertModalHandler) {
 }
 
 function AuthModal(props) {
-  const { showAuthModal, authModalHandler, alertModalHandler } = useContext(
-    ModalContext
-  );
+  const { showAuthModal, authModalHandler, alertModalHandler } =
+    useContext(ModalContext);
   const { token, loginHandler } = useContext(AuthContext);
 
   const emailInputRef = useRef();
