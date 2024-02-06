@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import AuthContext from "./auth-context";
-import { useNavigate } from "react-router-dom";
+
 function AuthContextProvider(props) {
   const fetchedToken = localStorage.getItem("token");
   const [token, setToken] = useState(fetchedToken);
   const [isLoggedIn, setIsLoggedIn] = useState(!!token);
-  const navigate = useNavigate();
 
   useEffect(() => {
     //! Auto logout feature
@@ -40,7 +39,6 @@ function AuthContextProvider(props) {
 
     let timeOutId = setTimeout(logoutHandler, expiresIn * 1000);
     localStorage.setItem("timeOutId", timeOutId);
-    navigate("/store");
   }
 
   function logoutHandler() {
@@ -54,7 +52,6 @@ function AuthContextProvider(props) {
     localStorage.removeItem("token");
     localStorage.removeItem("timeOutId");
     localStorage.removeItem("expiresIn");
-    navigate("/");
   }
 
   const contextValue = {
